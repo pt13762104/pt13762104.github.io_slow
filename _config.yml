@@ -108,3 +108,4 @@ compress_html:
   blanklines: true
   profile: false
   startings: [html, head, body]
+github: [metadata]

@@ -17,8 +17,7 @@ title: New test site v2
 email: pt48583994@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The new test site v2.
-#twitter_username: username
-baseurl: "/"
+baseurl: ""
 url: "https://pt13762104.github.io"
 github_username: pt13762104
 minimal_mistakes_skin: default
@@ -32,6 +31,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Ho_Chi_Minh # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+breadcrumbs: true  # disabled by default
 
 include:
   - _pages
@@ -82,10 +82,11 @@ defaults:
       type: posts
     values:
       layout: single
+      show_date: true
       author_profile: true
       read_time: true
       comments: false
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
